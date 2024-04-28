@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-family:'Poppins', sans-serif;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.content_text {
+    margin-left: 60px;
+    text-align: center;
+}
+
+article .content_text h1.title_form{
+    font-size: 50px;
+}
+
+.manager__button {
+    width: 300px;
+    margin: 0 auto;
+}
+
+article .content_text .manager__button .button_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #222;
+    width: 300px;
+    padding: 6px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+article .content_text .manager__button div svg{
+    width: 25px;
+    margin-right: 6px;
+}
+
+.content_image svg{
+    width: 400px;
+}
+
+.or__div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.or_p{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+
+.or_p::before{
+    background-color: #444;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    transform: translateX(20px) translateY(10px);
+}
+
+
+.or_p::after{
+    background-color: #444;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    transform: translateX(-98px) translateY(-12px);
+}
+
+.btn_account_div button{
+    background-color: rgb(29, 155, 240);
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    border-radius: 40px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.description__div{
+    font-size: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 50%;
+    margin-top: 20px;
+}
+
+.account__div{
+    text-align: center;
+}
+
+.account__div button{
+    background-color: transparent;
+    border: 1px solid rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+    padding: 10px;
+    border-radius: 100px;
+    width: 300px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+    article{
+        display: block;
+    }
+}
